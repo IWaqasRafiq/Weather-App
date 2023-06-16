@@ -89,3 +89,9 @@ body {
     font-size: 28px;
     margin-top: -6px;
 }
+#result p{
+    text-align: left;
+    margin-top: 15px;
+    font-size: 30px;
+    color: crimson;
+}

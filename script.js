@@ -1,6 +1,7 @@
 let name = "alice"
 
 window.getWeather = function () {
+    
 
     let cityName = document.querySelector("#cityName").value;
     let API_KEY = 'e0f99c494c2ce394a18cc2fd3f100543'
@@ -9,13 +10,18 @@ window.getWeather = function () {
         .then(function (response) {
             // handle success
             console.log(response.data);
-            document.querySelector("#result").innerHTML = `current temprature of ${response.data.name} is ${response.data.main.temp}°C`
+            document.querySelector(".temp").innerHTML = `${Math.round(response.data.main.temp)}°C`
+            document.querySelector(".city").innerHTML = `${response.data.name}`
+            document.querySelector(".humidity").innerHTML = `${response.data.main.humidity}%`
+            document.querySelector(".wind").innerHTML = `${response.data.wind.speed} km/h`
+            document.querySelector("#result").style.display = "none";
+
 
         })
         .catch(function (error) {
             // handle error
             console.log(error.data);
-            document.querySelector("#result").innerHTML = "error in getting weather data"
+            document.querySelector("#result").style.display = "block";
         })
 
 }
