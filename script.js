@@ -37,6 +37,8 @@ window.getWeather = function () {
             // handle error
             console.log(error.data);
             document.querySelector("#result").style.display = "block";
+            document.querySelector(".weather").style.display = "none";
+
         })
 
 }
