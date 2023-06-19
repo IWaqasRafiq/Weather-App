@@ -19,6 +19,7 @@ window.getWeather = function () {
             document.querySelector(".humidity").innerHTML = `${response.data.main.humidity}%`
             document.querySelector(".wind").innerHTML = `${response.data.wind.speed} km/h`
             document.querySelector("#result").style.display = "none";
+            document.querySelector(".weather").style.display = "block";
 
             if (response.data.weather[0].main == "Clouds") {
                 weatherIcon.src = "Img/clouds.png";
