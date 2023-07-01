@@ -18,9 +18,13 @@ body {
     width: 90%;
     max-width: 475px;
     background: linear-gradient(135deg, #26013D, #742d97);
-    margin: 100px auto 0;
+    margin: 6rem auto 0;
     border-radius: 20px;
+<<<<<<< HEAD
     padding: 2em;
+=======
+    padding: 3rem 2.5rem;
+>>>>>>> b71c6ac0dd531bf9b2170f18dc298916a44dec21
     text-align: center;
 }
 
@@ -40,8 +44,8 @@ body {
     height: 4rem;
     border-radius: 25px;
     flex: 1;
-    margin-right: 16px;
-    font-size: 18px;
+    margin-right: 1rem;
+    font-size: 1.1rem;
 }
 
 .search button {
@@ -49,32 +53,32 @@ body {
     outline: 0;
     background-color: #ebfffc;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 4.2rem;
+    height: 4.2rem;
     cursor: pointer;
 
 }
 .search button img{
-    width: 20px;
+    width: 1.3rem;
 }
 .weatherIcon{
-    width: 170px;
-    margin-top: 30px;
+    width: 10rem;
+    margin-top: 2.8rem;
 }
 .temp {
-    font-size: 80px ;
+    font-size: 5rem ;
     font-weight: 500;
 }
 .weather h2 {
-    font-size: 45px;
+    font-size: 3rem;
     font-weight: 400;
 }
 .details{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-    margin-top: 50px;
+    padding: 0 1.3rem;
+    margin-top: 3rem;
 }
 .col{
     display: flex;
@@ -82,16 +86,16 @@ body {
     text-align: left;
 }
 .col img{
-    width: 40px;
-    margin-right: 10px;
+    width: 3rem;
+    margin-right: 0.6rem;
 }
 .humidity, .wind{
-    font-size: 28px;
-    margin-top: -6px;
+    font-size: 1.8rem;
+    margin-top: -0.4rem;
 }
 #result p{
     text-align: left;
-    margin-top: 15px;
-    font-size: 30px;
+    margin-top: 0.9rem;
+    font-size: 1.8rem;
     color: crimson;
 }

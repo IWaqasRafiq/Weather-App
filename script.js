@@ -20,7 +20,10 @@ window.getWeather = function () {
             document.querySelector(".wind").innerHTML = `${response.data.wind.speed} km/h`
             document.querySelector("#result").style.display = "none";
             document.querySelector(".weather").style.display = "block";
+<<<<<<< HEAD
 
+=======
+>>>>>>> b71c6ac0dd531bf9b2170f18dc298916a44dec21
 
             if (response.data.weather[0].main == "Clouds") {
                 weatherIcon.src = "Img/clouds.png";
@@ -44,4 +47,7 @@ window.getWeather = function () {
         })
 
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b71c6ac0dd531bf9b2170f18dc298916a44dec21
